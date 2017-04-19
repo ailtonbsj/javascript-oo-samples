@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+ </head>
+
+ <body>
+   <div style="font-size: 50px;">
+     <span class="useful-loader">0</span>
+   </div>
+<script src="jquery-3.2.1.min.js" charset="utf-8"></script>
+<script src="useful.js" charset="utf-8"></script>
+<script type="text/javascript">
+Useful.include(
+'human.js','grand.js','parent.js','child.js',
+function(){
+  grand = new Grand('Julio');
+  parent = new Parent('Julio Jr');
+  child = new Child();
+
+  grand.saySomething();
+  parent.saySomething();
+  child.saySomething();
+
+  try {
+    console.log(grand.getPropParent());
+  } catch(e){}
+  console.log(parent.getPropParent());
+  console.log(child.getPropParent());
+});
+</script>
+ </body>
+
+ </html>

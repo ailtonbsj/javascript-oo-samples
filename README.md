@@ -1,2 +1,3 @@
-# javascript-oo-samples
-Somes examples of Javascript using Oriented Object
+# Javascript Oriented Object
+
+Somes examples of Javascript using Oriented Object with prototypes.
